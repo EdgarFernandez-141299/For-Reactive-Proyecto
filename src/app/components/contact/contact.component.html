@@ -2,7 +2,7 @@
     <h1> CONTACTANOS </h1>
     <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()"> 
         <input id="txtNom" type="text" formControlName="name" placeholder="Ingresa Tu Nombre" required> 
-        <input id="txtNom" type="text" formControlName="email" placeholder="Ingresa Tu Correo" required>
+        <input type="text" formControlName="email" placeholder="Ingresa Tu Correo" required>
         <textarea formControlName="message" placeholder="Escribe Tu Mensaje" required></textarea>
         <button type="submit" class="btn-send">Enviar</button>
     </form>
